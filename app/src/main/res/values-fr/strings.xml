@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eLan</string>
+    <string name="action_settings">Options</string>
+    <string name="button_text">Tournoi League of Legends du ...</string>
+    <string name="button_text2">Tournoi Hearthstone du ...</string>
+    <string name="button_text3">Commander des bières</string>
+    <string name="msg">Inscris toi !</string>
+    <string name="msgtwo">Inscris toi !</string>
+</resources>

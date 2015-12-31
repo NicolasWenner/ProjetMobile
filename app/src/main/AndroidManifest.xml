@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.esiea.pinet_simon1_wenner_nicolas2.lapils" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <receiver android:name=".BierUpdate" >
+            <intend-filer>
+                <action android:name="BIERS_UPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intend-filer>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LOLActivity" >
+        </activity>
+        <activity android:name=".HSActivity" >
+        </activity>
+
+        <service
+            android:name=".GetBiersServices"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".ShowBierList"
+            android:label="@string/title_activity_show_bier_list"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>
